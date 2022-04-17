@@ -87,12 +87,13 @@
             android:layout_height="180dp"
             android:layout_below="@+id/inner"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
             android:layout_marginBottom="10dp"
             android:background="@color/red"
+            android:onClick="goToCurrency"
             android:backgroundTint="@color/purple"
-            card_view:cardCornerRadius="2dp"
+            card_view:cardCornerRadius="10dp"
             card_view:cardElevation="4dp">
 
             <ImageView
@@ -124,8 +125,9 @@
             android:layout_marginRight="10dp"
             android:layout_toRightOf="@+id/currency"
             android:background="@color/colorPrimary"
+            android:onClick="goToTimeZone"
             android:backgroundTint="@color/yellow"
-            card_view:cardCornerRadius="2dp"
+            card_view:cardCornerRadius="10dp"
             card_view:cardElevation="4dp">
 
             <ImageView
@@ -153,11 +155,13 @@
             android:layout_height="177dp"
             android:layout_below="@+id/currency"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/colorPrimary"
+            android:onClick="goToNearby"
             android:backgroundTint="@color/blue"
-            card_view:cardCornerRadius="2dp"
+            card_view:cardCornerRadius="10dp"
             card_view:cardElevation="4dp">
 
             <ImageView
@@ -191,8 +195,9 @@
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/nearby"
             android:background="@color/colorPrimary"
+            android:onClick="goToScanner"
             android:backgroundTint="@color/green"
-            card_view:cardCornerRadius="2dp"
+            card_view:cardCornerRadius="10dp"
             card_view:cardElevation="4dp">
 
             <ImageView
@@ -220,13 +225,13 @@
             android:layout_height="186dp"
             android:layout_below="@+id/nearby"
             android:layout_gravity="center"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
             android:layout_marginBottom="10dp"
             android:background="@color/colorPrimary"
-            android:backgroundTint="@color/pink"
-            card_view:cardCornerRadius="2dp"
+            android:onClick="goToUber"
+            android:backgroundTint="@color/lime"
+            card_view:cardCornerRadius="10dp"
             card_view:cardElevation="4dp">
 
             <ImageView
@@ -244,6 +249,39 @@
                 android:layout_marginLeft="55dp"
                 android:layout_marginBottom="10dp"
                 android:text="Book cab"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/expensetracker"
+            android:layout_width="180dp"
+            android:layout_height="185dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/qrscanner"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/book_cab"
+            android:background="@color/colorPrimary"
+            android:onClick="goToExpense"
+            android:backgroundTint="@color/pink"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp">
+
+            <ImageView
+                android:layout_width="119dp"
+                android:layout_height="118dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/expense" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="Expense Tracker"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
         </androidx.cardview.widget.CardView>
